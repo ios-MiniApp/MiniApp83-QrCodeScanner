@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8715EB2328BC65710080E6B0 /* FlashButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715EB2228BC65710080E6B0 /* FlashButton.swift */; };
 		87B314C228BC49E6005F159F /* MiniApp83_QrCodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B314C128BC49E6005F159F /* MiniApp83_QrCodeScannerApp.swift */; };
 		87B314C428BC49E6005F159F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B314C328BC49E6005F159F /* ContentView.swift */; };
 		87B314C628BC49E7005F159F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B314C528BC49E7005F159F /* Assets.xcassets */; };
 		87B314C928BC49E7005F159F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B314C828BC49E7005F159F /* Preview Assets.xcassets */; };
+		87B314D128BC4B41005F159F /* QRScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 87B314D028BC4B41005F159F /* QRScanner */; };
+		87B3150628BC59A1005F159F /* ThrowQrScanerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B3150528BC59A1005F159F /* ThrowQrScanerViewController.swift */; };
+		87B3150928BC59FF005F159F /* QrScanerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B3150728BC59FF005F159F /* QrScanerViewController.swift */; };
+		87B3150A28BC59FF005F159F /* QrScanerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87B3150828BC59FF005F159F /* QrScanerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8715EB2228BC65710080E6B0 /* FlashButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashButton.swift; sourceTree = "<group>"; };
 		87B314BE28BC49E6005F159F /* MiniApp83-QrCodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniApp83-QrCodeScanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B314C128BC49E6005F159F /* MiniApp83_QrCodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp83_QrCodeScannerApp.swift; sourceTree = "<group>"; };
 		87B314C328BC49E6005F159F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		87B314C528BC49E7005F159F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87B314C828BC49E7005F159F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87B3150528BC59A1005F159F /* ThrowQrScanerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowQrScanerViewController.swift; sourceTree = "<group>"; };
+		87B3150728BC59FF005F159F /* QrScanerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScanerViewController.swift; sourceTree = "<group>"; };
+		87B3150828BC59FF005F159F /* QrScanerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QrScanerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B314D128BC4B41005F159F /* QRScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +63,8 @@
 			children = (
 				87B314C128BC49E6005F159F /* MiniApp83_QrCodeScannerApp.swift */,
 				87B314C328BC49E6005F159F /* ContentView.swift */,
+				8715EB2228BC65710080E6B0 /* FlashButton.swift */,
+				87B3150028BC5957005F159F /* QrScannerView */,
 				87B314C528BC49E7005F159F /* Assets.xcassets */,
 				87B314C728BC49E7005F159F /* Preview Content */,
 			);
@@ -65,6 +77,16 @@
 				87B314C828BC49E7005F159F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		87B3150028BC5957005F159F /* QrScannerView */ = {
+			isa = PBXGroup;
+			children = (
+				87B3150528BC59A1005F159F /* ThrowQrScanerViewController.swift */,
+				87B3150728BC59FF005F159F /* QrScanerViewController.swift */,
+				87B3150828BC59FF005F159F /* QrScanerViewController.xib */,
+			);
+			path = QrScannerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +105,9 @@
 			dependencies = (
 			);
 			name = "MiniApp83-QrCodeScanner";
+			packageProductDependencies = (
+				87B314D028BC4B41005F159F /* QRScanner */,
+			);
 			productName = "MiniApp83-QrCodeScanner";
 			productReference = 87B314BE28BC49E6005F159F /* MiniApp83-QrCodeScanner.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 87B314B528BC49E6005F159F;
+			packageReferences = (
+				87B314CF28BC4B41005F159F /* XCRemoteSwiftPackageReference "QRScanner" */,
+			);
 			productRefGroup = 87B314BF28BC49E6005F159F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B314C928BC49E7005F159F /* Preview Assets.xcassets in Resources */,
+				87B3150A28BC59FF005F159F /* QrScanerViewController.xib in Resources */,
 				87B314C628BC49E7005F159F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B3150628BC59A1005F159F /* ThrowQrScanerViewController.swift in Sources */,
+				8715EB2328BC65710080E6B0 /* FlashButton.swift in Sources */,
 				87B314C428BC49E6005F159F /* ContentView.swift in Sources */,
+				87B3150928BC59FF005F159F /* QrScanerViewController.swift in Sources */,
 				87B314C228BC49E6005F159F /* MiniApp83_QrCodeScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +299,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniApp83-QrCodeScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = 558ZJSQN67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "QRスキャンのためにカメラを使用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,8 +329,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniApp83-QrCodeScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = 558ZJSQN67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "QRスキャンのためにカメラを使用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		87B314CF28BC4B41005F159F /* XCRemoteSwiftPackageReference "QRScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mercari/QRScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		87B314D028BC4B41005F159F /* QRScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B314CF28BC4B41005F159F /* XCRemoteSwiftPackageReference "QRScanner" */;
+			productName = QRScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 87B314B628BC49E6005F159F /* Project object */;
 }
