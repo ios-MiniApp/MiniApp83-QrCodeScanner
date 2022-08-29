@@ -12,13 +12,10 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-
             VStack {
-
                 NavigationLink(destination: ThrowQrScanerViewController()) {
                     Text("QRScaner起動ボタン")
                 }
-    
             }.navigationBarHidden(true)
         }
     }

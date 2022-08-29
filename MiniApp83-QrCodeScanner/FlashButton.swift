@@ -8,7 +8,6 @@
 import UIKit
 
 final class FlashButton: UIButton {
-    // MARK: - Initializer
     override init(frame: CGRect) {
         super.init(frame: frame)
         settings()
@@ -28,7 +27,6 @@ final class FlashButton: UIButton {
     }
 }
 
-// MARK: - Private
 private extension FlashButton {
     func settings() {
         setTitleColor(.darkGray, for: .normal)
